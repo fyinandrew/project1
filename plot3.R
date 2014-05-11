@@ -8,7 +8,7 @@ data.electric.1$Time<-as.character(data.electric.1$Time)
 data.electric.1$Date<-rep(c("1/2/07","2/2/07"), each=1440)
 
 x<-paste(data.electric.1$Date,data.electric.1$Time)
-formal.time<-strptime(x,"%d/%m/%y %H:%M:%S")
+formal.time<-strptime(xx,"%d/%m/%y %H:%M:%S")
 data.electric.formal<-data.frame(formal.time,data.electric.1)
 
 
